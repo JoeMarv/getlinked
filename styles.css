@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
 @font-face {
     font-family: Clash Display;
@@ -9,12 +9,13 @@
 :root {
     --ff1: Clash Display;
     --ff2: 'Montserrat', sans-serif;
+    --ff3: 'Inter', sans-serif;
     --clr-gradient: linear-gradient(to left, #903AFF, #FE34B9);
     --clr-dark-purple: #150E28;
     --clr-medium-purple: #903AFF;
     --clr-light-purple: #D434FE;
     --clr-white: #FFFFFF;
-    --transition: 0.2s ease;
+    --transition: all 0.2s ease;
 }
 
 * {
@@ -46,7 +47,7 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    padding: 6vw 8vw 4vw 6vw;
+    padding: 6vw 8vw 4vw 8vw;
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.5px solid #efd6f528;
@@ -54,4 +55,58 @@ body {
 
 .menu-btn {
     padding: 2vw;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0vw;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    transform: translate(100vw);
+    background-color: var(--clr-dark-purple);
+}
+
+/* menu toggle start*/
+.open {
+    transform: translate(0vw);
+}
+
+/* menu toggle end*/
+
+.close-btn {
+    margin: 6vw 8vw;
+    padding: 2vw;
+    align-self: flex-end;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    margin: 4vw 0vw;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-family: var(--ff3);
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 3vw 12vw;
+}
+
+.register-btn button {
+    color: var(--clr-white);
+    font-family: var(--ff2);
+    font-weight: 400;
+    font-size: 1em;
+    padding: 5vw 16vw;
+    margin: 4vw 12vw;
+    border-radius: 1vw;
+    background-image: var(--clr-gradient);
 }
