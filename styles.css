@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;600;700&family=Unica+One&display=swap');
 
 @font-face {
     font-family: Clash Display;
@@ -10,6 +10,7 @@
     --ff1: Clash Display;
     --ff2: 'Montserrat', sans-serif;
     --ff3: 'Inter', sans-serif;
+    --ff4: 'Unica One', cursive;
     --clr-gradient: linear-gradient(to left, #903AFF, #FE34B9);
     --clr-dark-purple: #150E28;
     --clr-medium-purple: #903AFF;
@@ -39,7 +40,6 @@ body {
     flex-direction: column;
     font-size: 16px;
     justify-content: center;
-    font-family: var(--ff1);
     color: var(--clr-white);
     background-color: var(--clr-dark-purple);
 }
@@ -61,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0vw;
+    padding: 0vw;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -100,7 +101,7 @@ body {
     padding: 3vw 12vw;
 }
 
-.register-btn button {
+.register-btn1 button {
     color: var(--clr-white);
     font-family: var(--ff2);
     font-weight: 400;
@@ -109,4 +110,82 @@ body {
     margin: 4vw 12vw;
     border-radius: 1vw;
     background-image: var(--clr-gradient);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.5px solid #efd6f528;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/purple-lens-flare.svg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    align-items: center;
+}
+
+.ignite {
+    width: 80vw;
+    height: auto;
+    padding: 8vw 0vw 2vw 0vw;
+}
+
+.page-title {
+    width: 76vw;
+    height: auto;
+}
+
+.intro span {
+    font-family: var(--ff2);
+    font-weight: 400;
+    margin: 4vw 10vw;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.register-btn2 button {
+    color: var(--clr-white);
+    font-family: var(--ff2);
+    font-weight: 400;
+    font-size: 1em;
+    padding: 4vw 12vw;
+    margin: 4vw 12vw;
+    border-radius: 1vw;
+    background-image: var(--clr-gradient);
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0vw 2vw;
+}
+
+.time h1 {
+    font-family: var(--ff4);
+    font-weight: 400;
+    font-size: 2.5em;
+    margin: 2vw 0vw;
+}
+
+.time span {
+    margin: 0vw;
+    font-family: var(--ff2);
+    font-weight: 400;
+}
+
+.hero {
+    height: auto;
+    width: 100vw;
 }
