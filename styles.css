@@ -307,7 +307,7 @@ body {
     font-family: var(--ff2);
     font-weight: 400;
     font-size: 0.85em;
-    margin: 2vw 8vw;
+    margin: 3vw 8vw;
     line-height: 1.6;
 }
 
@@ -327,3 +327,121 @@ body {
     background-image: var(--clr-gradient);
     font-size: 0.85em;
 }
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vw 0vw 10vw 0vw;
+    text-align: center;
+    border-bottom: 0.5px solid #efd6f528;
+}
+
+.faqs-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.faqs-text {
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/purple-star.svg);
+    background-repeat: no-repeat;
+    background-position: 12vw 0vw;
+
+}
+
+.faqs-text-h1 {
+    font-family: var(--ff1);
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 3vw 0vw 0vw 0vw;
+}
+
+.faqs-text-h2 {
+    font-family: var(--ff1);
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--clr-light-purple);
+}
+
+.faqs-text-body {
+    font-family: var(--ff2);
+    font-weight: 400;
+    font-size: 0.8em;
+    margin: 2vw 8vw;
+    line-height: 1.6;
+}
+
+.faqs-accordion {
+    margin: 6vw 8vw 12vw 8vw;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 4vw 0vw;
+    border-bottom: 1px solid var(--clr-light-purple);
+    font-family: var(--ff2);
+    font-weight: 400;
+}
+
+.question-head {
+    color: var(--clr-brown);
+    font-family: var(--ff2);
+    background-color: inherit;
+    border: none;
+    padding: 0vw;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.question-head img {
+    width: 4vw;
+    height: auto;
+    margin: 0vw 2vw;
+}
+
+.up {
+    display: none;
+}
+
+/* .question-head:hover {
+    color: var(--clr-light-purple);
+} */
+
+.question-text {
+    font-size: 0.75em;
+    line-height: 1.6;
+    margin: 1vw 0vw;
+    overflow: hidden;
+    height: 0;
+    transition: var(--transition);
+}
+
+/* FAQ accordion toggle start */
+.open .question-head {
+    color: var(--clr-light-purple);
+}
+
+.open .up {
+    display: flex;
+}
+
+.open .down {
+    display: none;
+}
+
+.open .question-text {
+    height: 5em;
+}
+/* FAQ accordion toggle  end*/
