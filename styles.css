@@ -537,3 +537,57 @@ body {
     font-weight: 500;
     color: var(--clr-light-purple);
 }
+
+.prizes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14vw 0vw 10vw 0vw;
+    text-align: center;
+    border-bottom: 0.5px solid #efd6f528;
+    background-image: url(assets/purple-lens-flare.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0vw 0vw;
+}
+
+.prizes-header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/prizes-star.png);
+    background-repeat: no-repeat;
+    background-position: 20vw 0vw;
+}
+
+.prizes-header-h1 {
+    font-family: var(--ff1);
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.prizes-header-h2 {
+    font-family: var(--ff1);
+    font-weight: 700;
+    font-size: 1.25em;
+    color: var(--clr-light-purple);
+}
+
+.prizes-header-body {
+    font-family: var(--ff2);
+    font-weight: 400;
+    font-size: 0.85em;
+    margin: 3vw 8vw;
+    line-height: 1.6;
+}
+
+.prizes-main {
+    margin: 8vw 0vw 0vw 0vw;
+    background-image: url(assets/purple-lens-flare-right.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+.leaderboard {
+    margin: 12vw 0vw 0vw 0vw;
+}
