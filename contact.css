@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;600;700&family=Unica+One&display=swap');
+
+@font-face {
+    font-family: Clash Display;
+    src: url(assets/ClashDisplay-Bold.otf);
+    font-weight: normal;
+}
+
+:root {
+    --ff1: Clash Display;
+    --ff2: 'Montserrat', sans-serif;
+    --ff3: 'Inter', sans-serif;
+    --ff4: 'Unica One', cursive;
+    --clr-gradient: linear-gradient(to left, #903AFF, #FE34B9);
+    --clr-dark-purple: #150E28;
+    --clr-medium-purple: #903AFF;
+    --clr-light-purple: #D434FE;
+    --clr-white: #FFFFFF;
+    --transition: all 0.2s ease;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+    padding: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+/* MOBILE VIEW */
+body {
+    margin: 0vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    justify-content: center;
+    color: var(--clr-white);
+    background-color: var(--clr-dark-purple);
+}
