@@ -35,7 +35,7 @@ bodys.forEach(function (body) {
 
 //TIMER COUNTDOWN
 function calculateTimeLeft() {
-  const targetDate = new Date("2023-09-23T23:59:59").getTime();
+  const targetDate = new Date("2023-09-24T23:59:59").getTime();
   const now = new Date().getTime();
   const difference = targetDate - now;
 

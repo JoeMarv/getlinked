@@ -451,6 +451,15 @@ textarea {
         font-size: 1em;
     }
 
+    .register-btn1 button:hover {
+        background-image: none;
+        background-color: inherit;
+        color: var(--clr-white);
+        border-width: 1px;
+        border-style: solid;
+        border-image: linear-gradient(180deg , #903AFF, #FE34B9) 1;
+    }
+
     .menu-links {
         display: flex;
         flex-direction: row;
