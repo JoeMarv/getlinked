@@ -1464,10 +1464,6 @@ body {
         left: 48.5vw;
     }
 
-    #one .number,
-    #three .number,
-    #five .number {}
-
     .date {
         font-size: 1.2em;
         margin: 0vw;
