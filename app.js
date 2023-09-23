@@ -1,8 +1,11 @@
-//VARIABLES
+//DECLARATIONS
 const menu = document.querySelector(".menu");
 const menuBtn = document.querySelector(".menu-btn");
 const closeBtn = document.querySelector(".close-btn");
 const bodys = document.querySelectorAll(".question");
+const registerBtn = document.querySelector('.register-btn1')
+const registerBtn2 = document.querySelector('.register-btn2')
+
 
 //TOGGLE MENU BUTTON
 menuBtn.addEventListener("click", function () {
@@ -12,6 +15,7 @@ menuBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   menu.classList.remove("open");
 });
+
 
 //ACCORDION TOGGLE
 bodys.forEach(function (body) {
@@ -28,8 +32,8 @@ bodys.forEach(function (body) {
   });
 });
 
-// countdown.js
 
+//TIMER COUNTDOWN
 function calculateTimeLeft() {
   const targetDate = new Date("2023-09-23T23:59:59").getTime();
   const now = new Date().getTime();
@@ -70,3 +74,13 @@ function updateTimer() {
 
 setInterval(updateTimer, 1000);
 updateTimer(); // Initial update
+
+
+//NAVIGATE TO REGISTER PAGE
+registerBtn.addEventListener('click', function() {
+  window.location.href = 'register.html'
+})
+
+registerBtn2.addEventListener('click', function() {
+  window.location.href = 'register.html'
+})
