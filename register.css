@@ -468,19 +468,27 @@ input[type="checkbox"]:checked:after {
     }
 
     .size {
-        width: 28vw;
+        width: 30vw;
         display: flex;
         flex-direction: row;
     }
+
+
 
     select {
         padding: 1vw 2vw;
         border-radius: 0.25vw;
         font-size: 0.6em;
+        padding: 0vw 0vw 0vw 2vw;
     }
 
     #category {
         padding: 1vw 0vw 1vw 2vw;
+        width: 20vw;
+    }
+
+     #size {
+        width: 20vw;
     }
 
     .warning {
@@ -532,7 +540,7 @@ input[type="checkbox"]:checked:after {
         justify-content: center;
         align-items: center;
         background-color: hsl(256, 48%, 11%, 0.9);
-        display: flex;
+        display: none;
     }
 
     .open {
